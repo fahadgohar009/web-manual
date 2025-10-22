@@ -1,0 +1,139 @@
+/* lab6.css - Colorful Responsive Homepage using Flexbox and Media Queries */
+
+/* 🌼 Base Styles */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 40px;
+  line-height: 1.6;
+  background: linear-gradient(to right, #fff8e1, #ffe0b2);
+  color: #333;
+}
+
+/* 📦 Container Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 30px;
+  border: 3px solid #ff9800;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🧭 Headings */
+h1 {
+  color: #ffffff;
+  background: linear-gradient(to right, #ff7043, #ff9800);
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #ff5722;
+  font-size: 22px;
+  margin: 10px 0;
+  text-shadow: 1px 1px #ffd180;
+}
+
+h3 {
+  color: #4caf50;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+#center {
+  text-align: center;
+  font-weight: bold;
+  color: #0288d1;
+  font-size: 16px;
+}
+
+/* 🧾 Lists */
+.desktop-list {
+  display: block;
+  list-style-type: decimal;
+  background: #fff3e0;
+  border: 2px solid #ffb74d;
+  border-radius: 8px;
+  padding: 15px 25px;
+  width: 90%;
+}
+
+.desktop-list li {
+  margin: 8px 0;
+  color: #444;
+  font-weight: 500;
+}
+
+/* 📱 Mobile List */
+.mobile-list {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.mobile-list li {
+  background-color: #e1f5fe;
+  color: #01579b;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.mobile-list li:hover {
+  background-color: #4fc3f7;
+  color: white;
+  transform: scale(1.05);
+}
+
+.last-item {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+/* 📱 Mobile Styles */
+@media (max-width: 480px) {
+  body {
+    background: linear-gradient(to right, #a7ffeb, #84ffff);
+    margin: 10px;
+  }
+
+  .container {
+    background: #e0f7fa;
+    border: 2px solid #26c6da;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+    background: linear-gradient(to right, #26a69a, #4db6ac);
+  }
+
+  h2 {
+    color: #00897b;
+  }
+
+  h3 {
+    color: #00796b;
+  }
+
+  .desktop-list {
+    display: none;
+  }
+
+  .mobile-list {
+    display: block;
+  }
+}
