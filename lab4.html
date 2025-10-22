@@ -1,0 +1,45 @@
+<!-- lab4.html - Experiment 4: Inline, Internal, and External CSS -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Experiment 4: CSS Methods</title>
+
+  <!-- Internal CSS -->
+  <style>
+    h2 {
+      color: white;
+      background-color: crimson;
+      font-family: Arial, sans-serif;
+      border: 3px solid black;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .internal-p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #222;
+    }
+  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Inline CSS -->
+  <h1 style="color: white; background-color: royalblue; text-align: center; padding: 15px; border-radius: 8px; border: 3px solid black;">
+    Welcome to Lab 4
+  </h1>
+
+  <p style="color: green; font-size: 18px;">This paragraph uses inline CSS.</p>
+
+  <h2>Internal CSS Example</h2>
+  <p class="internal-p">This paragraph is styled using internal CSS.</p>
+
+  <h3>External CSS Example</h3>
+  <p>This paragraph is styled by an external CSS file (style.css).</p>
+</body>
+</html>

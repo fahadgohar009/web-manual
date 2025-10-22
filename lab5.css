@@ -1,0 +1,11 @@
+
+#main-title { color: navy; text-decoration: underline; }
+.highlight { background-color: yellow; font-style: italic; }
+h2, p, li { border: 1px solid #ccc; padding: 4px; }
+div p { color: teal; } /* descendant selector */
+div > ul > li { list-style-type: circle; } /* child selector */
+input[type="text"] { border: 2px solid green; }
+a:hover { color: red; }
+ul li:first-child { font-weight: bold; }
+p::first-letter { font-size: 24px; color: green; }
+
