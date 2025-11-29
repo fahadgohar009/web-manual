@@ -1,0 +1,48 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f6fa;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Buttons and Boxes */
+.box, #colorBtn {
+    width: 200px;
+    height: 80px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    border-radius: 12px;
+    border: 2px solid #d0d7e2;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+/* Button Styling */
+#colorBtn {
+    font-weight: bold;
+}
+
+/* Hover Effect for All Boxes */
+.box:hover, #colorBtn:hover {
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+    transform: scale(1.03);
+}
+
+/* Smooth Animations */
+.box, #colorBtn {
+    transition: all 0.35s ease;
+}
