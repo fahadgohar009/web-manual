@@ -7,7 +7,7 @@ document.getElementById("colorBtn").addEventListener("click", function () {
 // 2. Modify text using this
 document.getElementById("textBox").addEventListener("click", function () {
     this.textContent = 
-        this.textContent === "Clicked!" ? "Click me to change text" : "Clicked!";
+        this.textContent === "FAHAD!" ? "Click me to change text" : "FAHAD!";
 });
 
 // 3. Increasing size on hover
